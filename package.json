@@ -32,10 +32,13 @@
     "react-query": "3.38.0",
     "react-router-dom": "6.3.0",
     "react-scripts": "5.0.1",
+    "react-scroll": "^1.8.8",
     "react-table": "^7.7.0",
     "react-topbar-progress-indicator": "4.1.1",
+    "rgt": "^1.0.7",
     "sass": "1.50.1",
     "socicon": "3.0.5",
+    "typewriter-effect": "^2.19.0",
     "yup": "0.32.11"
   },
   "devDependencies": {
