@@ -83,6 +83,20 @@ $light-light: gba($gray-100, 0.75) !default;
 $light-inverse: $gray-600 !default;
 $light-inverse-dark: $gray-600-dark !default;
 
+// Corporation Gold colors
+$corp-gold: #e3b87f !default;
+$corp-gold-active: #F6E5CA !default;
+$corp-gold-light: #F6E5CA !default;
+$corp-gold-light-dark: #1C3833 !default;
+$corp-gold-inverse: $white !default;
+
+// 
+$corp-purple: #9776b7 !default;
+$corp-purple-active: #0BB7AF !default;
+$corp-purple-light: #e6daee !default;
+$corp-purple-light-dark: #1C3833 !default;
+$corp-purple-inverse: $white !default;
+
 // Success colors
 $success: #1BC5BD !default;
 $success-active: #0BB7AF !default;
@@ -125,6 +139,8 @@ $dark-inverse-dark: $gray-100-dark !default;
 $theme-colors: (
 	"white": $white,
 	// custom color type
+	"corp-gold": $corp-gold,
+	"corp-purple": $corp-purple,
 	"light": $light,
 	"primary": $primary,
 	"secondary": $secondary,
@@ -142,6 +158,8 @@ $theme-colors-dark: (
 
 // Contextual active state colors
 $theme-active-colors: (
+	"corp-gold": $corp-gold-active,
+	"corp-purple": $corp-purple-active,
 	"primary": $primary-active,
 	"secondary": $secondary-active,
 	"light": $light-active,
@@ -159,6 +177,8 @@ $theme-active-colors-dark: (
 
 // Contextual inverse state colors
 $theme-inverse-colors: (
+	"corp-gold": $corp-gold-inverse,
+	"corp-purple": $corp-purple-inverse,
 	"primary": $primary-inverse,
 	"secondary": $secondary-inverse,
 	"light": $light-inverse,
@@ -176,6 +196,8 @@ $theme-inverse-colors-dark: (
 
 // Contextual light state colors
 $theme-light-colors: (
+	"corp-gold": $corp-gold-light,
+	"corp-purple": $corp-purple-light,
 	"primary": $primary-light,
 	"secondary": $secondary-light,
 	"success": $success-light,
@@ -185,6 +207,7 @@ $theme-light-colors: (
 	"dark": $dark-light) !default;
 
 $theme-light-colors-dark: (
+	"corp-gold": $corp-gold-light-dark,
 	"primary": $primary-light-dark,
 	"success": $success-light-dark,
 	"info": $info-light-dark,
@@ -196,6 +219,8 @@ $theme-light-colors-dark: (
 // Text colors
 $theme-text-colors: (
 	"white": $white,
+	"corp-gold": $corp-gold,
+	"corp-purple": $corp-purple,
 	"primary": $primary,
 	"secondary": $secondary,
 	"light": $light,

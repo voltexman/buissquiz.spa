@@ -17,8 +17,8 @@ const HeaderTop = () => {
                             </span>
                         </button>
                         <a href="/">
-                            <img alt="Logo" src="media/logos/logo-landing.png" className="logo-default h-25px h-lg-30px" />
-                            <img alt="Logo" src="media/logos/logo-landing-dark.png" className="logo-sticky h-20px h-lg-25px" />
+                            <img alt="Logo" src="media/logos/logo-landing.png" className="logo-default h-25px h-lg-50px" />
+                            <img alt="Logo" src="media/logos/logo-landing-dark.png" className="logo-sticky h-20px h-lg-50px" />
                         </a>
                     </div>
                     <div className="d-lg-block" id="kt_header_nav_wrapper">

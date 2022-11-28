@@ -4,6 +4,7 @@ import HeaderTop from './sections/HeaderTop'
 import HeaderBottom from './sections/HeaderBottom'
 import WhatThis from './sections/WhatThis'
 import { ScrollTop } from '../../../_metronic/layout/components/scroll-top'
+import HowUse from './sections/HowUse'
 
 const BODY_CLASSES = ['position-relative']
 const LandingPage = () => {
@@ -48,10 +49,18 @@ const LandingPage = () => {
         </div>
       </div>
 
-      <div className="mb-n10 mb-lg-n20 z-index-2">
+      <div className="mb-n10 mb-lg-n50 z-index-2">
         <div className="container">
 
           <WhatThis />
+
+        </div>
+      </div>
+
+      <div className='my-10'>
+        <div className="container">
+
+          <HowUse />
 
         </div>
       </div>

@@ -1,16 +1,30 @@
+import React, { Component } from 'react'
 import Typewriter from 'typewriter-effect'
 import Gradient from 'rgt'
 import { KTSVG } from '../../../../_metronic/helpers'
+import { motion } from 'framer-motion'
 
 const HeaderBottom = () => {
     return (
         <div className="d-lg-flex my-10 my-lg-20">
             <div className="col-12 col-lg-4 text-center">
-                <img className="img-fluid rounded" src="media/books/2.png" alt="" />
+                <motion.img
+                    className="img-fluid rounded"
+                    src="media/books/2.png"
+                    alt=""
+                    initial={{ boxShadow: '0px 0px 30px rgb(255, 0, 0, .6)' }}
+                    animate={{ boxShadow: '0px 0px 45px rgb(255, 0, 0, .3)' }}
+                    transition={{
+                        duration: 2,
+                        repeat: Infinity,
+                        repeatType: 'reverse',
+                        ease: 'easeInOut'
+                    }}
+                />
             </div>
             <div className="col-12 col-lg-8 mt-15 mt-lg-0 ps-lg-20">
-                <h1 className="text-white text-center text-lg-start lh-base fw-bolder fs-2x">
-                    <Gradient dir="left-to-right" from="#12CE5D" to="#FFD80C">
+                <h1 className="text-white text-center text-lg-start lh-base fw-bold fs-2x">
+                    <Gradient dir="left-to-right" from="#f0bbca" to="#9a79ba">
                         СТВОРЮЙТЕ, ОТРИМУЙТЕ, АНАЛІЗУЙТЕ
                     </Gradient>
                     <br />
@@ -36,12 +50,7 @@ const HeaderBottom = () => {
                     <div className="d-flex flex-wrap flex-center justify-content-lg-between mx-auto my-10 w-xl-900px">
                         <div className="d-flex flex-column flex-center h-125px w-125px h-lg-200px w-lg-200px m-lg-3 bgi-no-repeat bgi-position-center bgi-size-contain" style={{ backgroundImage: "url('media/svg/misc/octagon.svg')" }}>
                             <span className="svg-icon svg-icon-2tx svg-icon-white mb-1 mb-lg-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                    <rect x="2" y="2" width="9" height="9" rx="2" fill="black" />
-                                    <rect opacity="0.3" x="13" y="2" width="9" height="9" rx="2" fill="black" />
-                                    <rect opacity="0.3" x="13" y="13" width="9" height="9" rx="2" fill="black" />
-                                    <rect opacity="0.3" x="2" y="13" width="9" height="9" rx="2" fill="black" />
-                                </svg>
+                                <KTSVG path="/media/icons/duotune/general/gen014.svg" className="svg-icon-muted svg-icon-2hx" />
                             </span>
                             <div className="mb-0 text-center">
                                 <div className="fs-lg-2hx fs-2x fw-bolder text-white d-flex flex-center">
@@ -79,7 +88,17 @@ const HeaderBottom = () => {
                 </div>
 
                 <div className="d-flex justify-content-center justify-content-lg-start mt-5 mt-lg-0">
-                    <a href="/" className="btn btn-flex btn-primary d-inline-flex px-6">
+                    <motion.a
+                        href="/"
+                        className="btn btn-flex btn-danger d-inline-flex px-6"
+                        animate={{ scale: [1, 1.04, 1, 1.04, 1, 1.04, 1, 1.04, 1, 1.04, 1, 1.04, 1] }}
+                        transition={{
+                            duration: 3,
+                            repeat: Infinity,
+                            repeatDelay: 6,
+                            repeatType: 'mirror',
+                        }}
+                    >
                         <span className="svg-icon svg-icon-2x">
                             <KTSVG
                                 path='/media/icons/duotune/communication/com006.svg'
@@ -90,10 +109,10 @@ const HeaderBottom = () => {
                             <span className="fs-3 fw-bolder">Спробувати</span>
                             <span className="fs-7">Демо версія</span>
                         </span>
-                    </a>
+                    </motion.a>
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
 
