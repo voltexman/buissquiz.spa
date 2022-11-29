@@ -91,11 +91,11 @@ $corp-gold-light-dark: #1C3833 !default;
 $corp-gold-inverse: $white !default;
 
 // 
-$corp-purple: #9776b7 !default;
-$corp-purple-active: #0BB7AF !default;
-$corp-purple-light: #e6daee !default;
-$corp-purple-light-dark: #1C3833 !default;
-$corp-purple-inverse: $white !default;
+$corporate-red: #f0688a !default;
+$corporate-red-active: #0BB7AF !default;
+$corporate-red-light: #f4dde4 !default;
+$corporate-red-light-dark: #1C3833 !default;
+$corporate-red-inverse: $white !default;
 
 // Success colors
 $success: #1BC5BD !default;
@@ -140,7 +140,7 @@ $theme-colors: (
 	"white": $white,
 	// custom color type
 	"corp-gold": $corp-gold,
-	"corp-purple": $corp-purple,
+	"corporate-red": $corporate-red,
 	"light": $light,
 	"primary": $primary,
 	"secondary": $secondary,
@@ -159,7 +159,7 @@ $theme-colors-dark: (
 // Contextual active state colors
 $theme-active-colors: (
 	"corp-gold": $corp-gold-active,
-	"corp-purple": $corp-purple-active,
+	"corporate-red": $corporate-red-active,
 	"primary": $primary-active,
 	"secondary": $secondary-active,
 	"light": $light-active,
@@ -178,7 +178,7 @@ $theme-active-colors-dark: (
 // Contextual inverse state colors
 $theme-inverse-colors: (
 	"corp-gold": $corp-gold-inverse,
-	"corp-purple": $corp-purple-inverse,
+	"corporate-red": $corporate-red-inverse,
 	"primary": $primary-inverse,
 	"secondary": $secondary-inverse,
 	"light": $light-inverse,
@@ -197,7 +197,7 @@ $theme-inverse-colors-dark: (
 // Contextual light state colors
 $theme-light-colors: (
 	"corp-gold": $corp-gold-light,
-	"corp-purple": $corp-purple-light,
+	"corporate-red": $corporate-red-light,
 	"primary": $primary-light,
 	"secondary": $secondary-light,
 	"success": $success-light,
@@ -208,6 +208,7 @@ $theme-light-colors: (
 
 $theme-light-colors-dark: (
 	"corp-gold": $corp-gold-light-dark,
+	"corporate-red": $corporate-red-light-dark,
 	"primary": $primary-light-dark,
 	"success": $success-light-dark,
 	"info": $info-light-dark,
@@ -220,7 +221,7 @@ $theme-light-colors-dark: (
 $theme-text-colors: (
 	"white": $white,
 	"corp-gold": $corp-gold,
-	"corp-purple": $corp-purple,
+	"corporate-red": $corporate-red,
 	"primary": $primary,
 	"secondary": $secondary,
 	"light": $light,
