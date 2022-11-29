@@ -12,7 +12,8 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Montserrat', sans-serif; */
+  font-family: 'Nunito', sans-serif;
   background-color: #f2f3f8;
   color: #5E6278;
   line-height: 1;

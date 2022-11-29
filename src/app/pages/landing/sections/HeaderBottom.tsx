@@ -8,18 +8,11 @@ const HeaderBottom = () => {
     return (
         <div className="d-lg-flex my-10 my-lg-20">
             <div className="col-12 col-lg-4 text-center">
-                <motion.img
+                <img
                     className="img-fluid rounded"
                     src="media/books/2.png"
                     alt=""
-                    initial={{ boxShadow: '0px 0px 30px rgb(255, 0, 0, .6)' }}
-                    animate={{ boxShadow: '0px 0px 45px rgb(255, 0, 0, .3)' }}
-                    transition={{
-                        duration: 2,
-                        repeat: Infinity,
-                        repeatType: 'reverse',
-                        ease: 'easeInOut'
-                    }}
+                    style={{ boxShadow: '0 0 25px rgba(25, 250, 250, .25)' }}
                 />
             </div>
             <div className="col-12 col-lg-8 mt-15 mt-lg-0 ps-lg-20">
@@ -91,7 +84,7 @@ const HeaderBottom = () => {
                     <motion.a
                         href="/"
                         className="btn btn-flex btn-danger d-inline-flex px-6"
-                        animate={{ scale: [1, 1.04, 1, 1.04, 1, 1.04, 1, 1.04, 1, 1.04, 1, 1.04, 1] }}
+                        animate={{ scale: [1, 1.04, 1, 1.04, 1, 1.04, 1, 1.04, 1, 1.04, 1] }}
                         transition={{
                             duration: 3,
                             repeat: Infinity,
