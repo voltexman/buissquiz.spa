@@ -1,20 +1,56 @@
 import React from "react"
-import { KTSVG } from "../../../../_metronic/helpers"
+import { KTSVG, toAbsoluteUrl } from "../../../../_metronic/helpers"
+import TinySlider from "tiny-slider-react";
+import 'tiny-slider/dist/tiny-slider.css';
+
+var imgs = [
+    '/media/product-demos/demo1.png',
+    '/media/product-demos/demo2.png',
+    '/media/product-demos/demo3.png',
+    '/media/product-demos/demo4.png'
+]
+
+const settings = {
+    lazyload: true,
+    nav: false,
+    mouseDrag: true,
+    controls: false
+};
+
 
 const WhatThis = () => {
     return (
         <>
-            <div className="text-center mb-17">
-                <h3 className="fs-2hx text-dark mb-5" id="what-this" data-kt-scroll-offset="{default: 100, lg: 150}">Що це?</h3>
-                <div className="card border-transparent" data-theme="light" style={{ backgroundColor: '#1C325E' }}>
-                    <div className="card-body d-flex ps-xl-15">
-                        <div className="col-lg-8 m-0">
-                            <div className="position-relative fs-3 z-index-2 text-start fw-bold text-white mb-7">
-                                <span className="me-2 fw-normal"><span className="text-danger opacity-75-hover">BuissQuiz</span> - це сервіс для створення опитувань та збору і аналізу результатів, який є потужним та незамінним інструментом для бізнесу, навчання чи будь яких інших рішень. Правильно створене опитування клієнтів чи потенційних клієнтів, учнів або іншої аудиторії, покращить вашу взаємодію, виявить потреби, плюси та недоліки. Використовуйте квіз для Ваших потреб. А ми Вам в цьому допоможемо.</span>
-                            </div>
-                            <div className="mb-3"></div>
+            <div className="mb-17">
+                <h3 className="fs-2hx text-center text-dark mb-5" id="what-this" data-kt-scroll-offset="{default: 100, lg: 150}">Що це?</h3>
+                <div className="d-flex flex-column flex-lg-row align-items-center h-100 overflow-hidden position-relative rounded-4" style={{ backgroundColor: '#1C325E' }}>
+                    <div className="h-500px hlg-100 flex-shrink-0 w-100 w-lg-500px">
+                        <TinySlider settings={settings}>
+                            {imgs.map((element) => (
+                                <img
+                                    className='img-fluid h-100'
+                                    src={element}
+                                    data-src={element}
+                                    alt=""
+                                />
+                            ))}
+                        </TinySlider>
+                    </div>
+                    <div className="flex-grow-1 d-flex flex-column align-items-start h-100 p-10 p-lg-18">
+                        <div className="testimonails-text fw-semibold fs-3 text-gray-300 float-start">
+                            <span className="text-danger opacity-75-hover">BuissQuiz</span> - це сервіс для створення опитувань та збору і аналізу результатів, який є потужним та незамінним інструментом для бізнесу, навчання чи будь яких інших рішень. Правильно створене опитування клієнтів чи потенційних клієнтів, учнів або іншої аудиторії, покращить вашу взаємодію, виявить потреби, плюси та недоліки. Використовуйте квіз для Ваших потреб. А ми Вам в цьому допоможемо.
                         </div>
-                        <img src="media/illustrations/sigma-1/17-dark.png" className="position-absolute me-3 bottom-0 end-0 h-200px" alt="" />
+                        <div className="d-flex my-5">
+                            <span className="d-flex fs-2x bg-secondary align-items-center justify-content-center bg-opacity-10 w-60px h-60px rounded-4 cursor-pointer me-3"><KTSVG path="/media/icons/duotune/general/gen030.svg" className="svg-icon-danger opacity-75 svg-icon-2hx" /></span>
+                            <span className="d-flex fs-2x bg-secondary align-items-center justify-content-center bg-opacity-10 w-60px h-60px rounded-4 cursor-pointer me-3"><KTSVG path="/media/icons/duotune/general/gen049.svg" className="svg-icon-danger opacity-75 svg-icon-2hx" /></span>
+                            <span className="d-flex fs-2x bg-secondary align-items-center justify-content-center bg-opacity-10 w-60px h-60px rounded-4 cursor-pointer me-3"><KTSVG path="/media/icons/duotune/communication/com007.svg" className="svg-icon-danger opacity-75 svg-icon-2hx" /></span>
+                            <span className="d-flex fs-2x bg-secondary align-items-center justify-content-center bg-opacity-10 w-60px h-60px rounded-4 cursor-pointer"><KTSVG path="/media/icons/duotune/graphs/gra001.svg" className="svg-icon-danger opacity-75 svg-icon-2hx" /></span>
+                        </div>
+                        <div className="mt-5">
+                            <a href="#" className="btn btn-danger fw-bold me-2">Зареєструватися</a>
+                            <a href="/metronic8/demo1/../demo1/apps/support-center/overview.html" className="btn btn-color-white bg-white bg-opacity-15 bg-hover-opacity-25 fw-semibold">How to</a>
+                        </div>
+                        <img src="/media/illustrations/sigma-1/17-dark.png" className="position-absolute me-3 bottom-0 end-0 h-200px" alt=""></img>
                     </div>
                 </div>
             </div>
@@ -83,7 +119,7 @@ const WhatThis = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    <img src="media/product-demos/demo2.png" alt="" className="img-fluid mw-lg-500px rounded" style={{ boxShadow: '0 0 20px rgba(255, 0, 0, .12)' }} />
+                                    <img src="media/product-demos/demo2.png" alt="" className="img-fluid mw-lg-500px rounded" style={{ boxShadow: '0 0 20px 10px rgba(255, 0, 0, .05)' }} />
                                 </div>
                             </div>
                         </div>
@@ -198,7 +234,7 @@ const WhatThis = () => {
                                         </div>
 
                                     </div>
-                                    <img src="media/product-demos/demo4.png" alt="" className="img-fluid mw-lg-500px rounded" style={{ boxShadow: '0 0 20px rgba(255, 0, 0, .12)' }} />
+                                    <img src="media/product-demos/demo4.png" alt="" className="img-fluid mw-lg-500px rounded" style={{ boxShadow: '0 0 20px 10px rgba(255, 0, 0, .05)' }} />
                                 </div>
                             </div>
                         </div>
@@ -265,7 +301,7 @@ const WhatThis = () => {
                                         </div>
 
                                     </div>
-                                    <img src="media/product-demos/demo3.png" alt="" className="img-fluid mw-lg-500px rounded" style={{ boxShadow: '0 0 20px rgba(255, 0, 0, .12)' }} />
+                                    <img src="media/product-demos/demo3.png" alt="" className="img-fluid mw-lg-500px rounded" style={{ boxShadow: '0 0 20px 10px rgba(255, 0, 0, .05)' }} />
                                 </div>
                             </div>
                         </div>
@@ -332,7 +368,7 @@ const WhatThis = () => {
                                         </div>
 
                                     </div>
-                                    <img src="media/product-demos/demo3.png" alt="" className="img-fluid mw-lg-500px rounded" style={{ boxShadow: '0 0 20px rgba(255, 0, 0, .12)' }} />
+                                    <img src="media/product-demos/demo3.png" alt="" className="img-fluid mw-lg-500px rounded" style={{ boxShadow: '0 0 20px 10px rgba(255, 0, 0, .05)' }} />
                                 </div>
                             </div>
                         </div>
